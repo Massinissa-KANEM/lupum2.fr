@@ -1,0 +1,378 @@
+main {
+    background: #F5EEFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+}
+.profil {
+    background: #F5EEFF;
+    border: 6px solid #D3BEFF;
+    border-radius: 15px;
+    padding: 20px 0px 40px 0px;
+    margin: 10px;
+}
+.profil .logout {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.profil .logout ion-icon {
+    color: #ff0000;
+    font-size: 35px;
+}
+.profil img {
+    width: 100%;
+    border: 5px solid #D3BEFF;
+    border-radius: 300px;
+}
+.profil .name {
+    color: #5d5d5d;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.profil .poste {
+    color: #B4B4B4;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.profil .entreprise {
+    color: #B4B4B4;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.btns {
+    margin-top: 20px;
+}
+.btns a button {
+    background: #F5EEFF;
+    border: 4px solid #D3BEFF;
+    border-radius: 10px;
+    color: #D3BEFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding:6px 12px;
+}
+.btns .fidelite {
+    margin-left: 10px;
+}
+
+.infos {
+    background: #F5EEFF;
+    border: 6px solid #D3BEFF;
+    border-radius: 15px;
+    padding: 40px 40px;
+    margin: 10px;
+}
+.infos hr {
+    border: 1px solid #D3BEFF;
+    margin: 25px 0px;
+}
+.infos p {
+    color: #5d5d5d;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    margin-left: 10px;
+}
+.infos .output {
+    color: #B08BFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+    /* margin-left: 40px; */
+}
+.profil, .infos {
+    height: 400px;
+}
+.all {
+    padding-top: 100px;
+}
+
+.cta {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    z-index: 3;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #F68B1E;
+    width: 60px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta a {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567; 
+   }
+   .cta a ion-icon {
+    font-size: 17px;
+    margin-right: 7px;
+   }
+   .cta a:hover {
+    text-decoration: none;
+    
+   }
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   .cta:hover:before {
+    width: 100%;
+    background: #F68B1E;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+   .history {
+    margin-left: 10px;
+   }
+   .history .all_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.afficher-plus {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D3BEFF;
+    color : #6E92F0;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    top: 5px;
+    right: 5px;
+    
+}
+
+.afficher-plus:hover {
+    cursor: pointer;
+}
+.commande .debut, .commande .fin {
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+
+.commande .debut p, .commande .fin p{
+    margin: 0 0 0 10px;
+    color: #B4B4B4;
+    font-size: 18px;
+}
+/* Popup */
+.popup {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    top : 83%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .popup-title {
+    font-size: 20px;
+    color: #6E92F0;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .popup-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-close i {
+    font-size: 20px;
+    color: #B4B4B4;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .popup-section {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .popup-section-title {
+    font-size: 18px;
+    color: #6E92F0;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .popup-section-text {
+    font-size: 16px;
+    color: #B4B4B4;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .popup-section-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .popup-section-list li {
+    font-size: 16px;
+    color: #4D4D4D;
+    margin-bottom: 5px;
+  }
+  
+  .popup:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: white;
+  }
+  
+  .popup:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-bottom-color: #D3BEFF;
+  }
+
+  .commande .afficher-plus {
+    margin-bottom: 10px;
+    z-index: 100;
+  }
+
+  .commande .popup {
+    display: none;
+    z-index: 100;
+  }
+
+  .commande .popup.visible {
+    display: block;
+    z-index: 100;
+  }
+/* Popup */
+
+
+/* Commande */
+.commande {
+    border : 8px solid #D3BEFF;
+    border-radius: 20px;
+    padding : 20px 10px 20px 20px;
+    margin-bottom : 10px;
+    width : calc(100% / 3 - 20px);
+    height: 180px;
+    margin-right : 10px;
+    position: relative;
+    z-index: 1;
+  }
+.commande h2 {
+    font-size: 20px;
+    margin-bottom : 10px;
+    color: #4D4D4D;
+    font-weight: bold;  
+    margin-top: 0;
+}
+.commande .debut, .commande .date, .commande .participants {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.commande .debut h4, .commande .date h4, .commande .participants h4 {
+    font-size: 17px;
+    color: #6E92F0;
+    font-weight: 600;
+    margin: 0;
+}
+.commande .debut p, .commande .date p,     .commande .participants p {
+    font-size: 14px;
+    color: #B4B4B4;
+    font-weight: 600;
+    margin: 0 0 0 7px;
+}
+button i {
+    font-size: 25px;
+    color: #6E92F0;
+    margin-right: 7px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/* 
+.commande h4 {
+    font-size: 15px;
+    margin-bottom : 5px;
+    color: #6E92F0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.commande h4 p {
+    font-size: 12px;
+    margin-bottom : 0px;
+    color: #d00505;
+}
+.commande h4 ul li {
+    font-size: 15px;
+    margin-bottom : 5px;
+    color: #4D4D4D;
+} */

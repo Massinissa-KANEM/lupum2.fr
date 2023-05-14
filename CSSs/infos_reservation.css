@@ -1,0 +1,101 @@
+body {
+    background-color: #F5EEFF;
+}
+
+.cadre {
+    border : 7px solid #D3BEFF;
+    border-radius: 15px;
+    margin: 0px 7%;
+    padding: 17px;
+}
+.infos {
+    margin: 0px 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+}
+.infos h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #6E92F0;
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+}
+.infos h4, .infos h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6E92F0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infos p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F68B1E;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+#participant_emails {
+    width: 100%;
+}
+#participant_emails #add_email_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 3px solid #D3BEFF;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: #6E92F0;
+    font-size: 20px;
+}
+#participant_emails button ion-icon {
+    color: #4D4D4D;
+    margin-right: 5px;
+}
+.participant_email {
+    border: 5px solid #D3BEFF;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #6E92F0;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: calc(100% / 4 - 40px);
+    height: 50px;
+}
+.participant_email:focus {
+    outline: none;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+form .valider {
+    color: #23DC3D;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #23DC3D;
+    border-radius: 10px;
+    padding: 5px 12px;
+    margin-top: 20px;
+}
+.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}

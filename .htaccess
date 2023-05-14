@@ -1,0 +1,11 @@
+ErrorDocument 404 /404.php
+RewriteEngine On 
+RewriteBase /
+
+# Masquer les informations du serveur
+ServerSignature Off
+
+# Désactiver l'affichage du contenu des répertoires
+Options All -Indexes
+# Alternative pour empêcher le listage des répertoires
+IndexIgnore *

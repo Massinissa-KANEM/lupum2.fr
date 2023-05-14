@@ -1,0 +1,241 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* cursor: url('../images/icons8-blue-pointer-48.png'), auto; */
+}
+.vagues {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+body {
+    margin: 0;
+    background-color: #F5EEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* cursor: url('../images/icons8-blue-pointer-48.png'), auto; */
+}
+header {
+    background-color: transparent;
+    width: 100%;
+    z-index: 1;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 17% 0px 10%;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px 0 0 ;
+    text-decoration: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #393939;
+    font-size: 20px;
+}
+.menu ul .simple_button{
+    border: 3px solid #D3BEFF;
+    border-radius: 13px;
+    padding: 5px 20px 5px 17px;
+}
+.menu ul .big_button{
+    border: 3px solid #F68B1E;
+    background-color: #F68B1E;
+    border-radius: 13px;
+    padding: 12px 20px;
+}
+.menu ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.menu ul li a i {
+    padding: 0 10px 0 0;
+}
+.menu ul li a ion-icon {
+    padding: 0 7px 0 0;
+    font-size: 28px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo img{
+    width: 200px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+                                                /* ----- block n.1 ----- */
+.blob { 
+    top : 23%;
+    z-index: -1;
+    position: absolute;
+    width: 370px;
+    height: 255px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22861.559%22 height=%22594.94%22 viewBox=%2278.732 178.849 861.559 594.94%22%3E%3Cdefs%3E%3CclipPath id=%22b%22%3E%3Cpath fill=%22currentColor%22 d=%22M934 644.5Q898 789 740.5 772T496 767.5Q409 780 325 734T131 594q-110-94 11.5-179.5t192.5-145q71-59.5 173.5-86t112 98Q630 406 800 453t134 191.5Z%22%2F%3E%3C%2FclipPath%3E%3Cfilter id=%22a%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E%3CfeFlood flood-color=%22%23fff%22 result=%22neutral-gray%22%2F%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22%2F%3E%3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22%2F%3E%3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0 0.05 0%22%2F%3E%3C%2FfeComponentTransfer%3E%3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cg filter=%22url(%23a)%22 clip-path=%22url(%23b)%22%3E%3Cpath fill=%22%23f68b1e%22 d=%22M934 644.5Q898 789 740.5 772T496 767.5Q409 780 325 734T131 594q-110-94 11.5-179.5t192.5-145q71-59.5 173.5-86t112 98Q630 406 800 453t134 191.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+                                                                                                                                                    
+.first_block {
+    /* background-color: #F68B1E; */
+    width: auto;
+    height: 90vh;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E6DAFF;
+    z-index: 0;
+    position: relative;
+}
+.first_block .image img {
+    width: 600px;
+}
+.first_block .intro {
+    /* margin-left: 5%; */
+    width: 70%;
+    /* background-color: #2a0086; */
+}
+.first_block .intro h2 {
+    font-size: 40px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.778) ;
+    margin-bottom: 20px;
+}
+.first_block .intro p {
+    margin-left: 40px;
+    font-size: 24px;
+    width: 90%;
+    color: #575757;
+    font-weight: 400;
+}
+.first_block .intro a {
+    text-decoration: none;
+    color: #393939;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.first_block .intro .inscription {
+    font-size: 25px;
+    border: 4px solid #F68B1E;
+    border-radius: 17px;
+    padding: 10px 0px;
+    width: 40%;
+    background-color: #E6DAFF;
+    margin-left: 22%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first_block .intro .inscription ion-icon {
+    padding: 0 10px 0 0;
+    font-size: 40px;
+}
+main #chart {
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: -1%;
+    width: auto;
+    rotate: -182deg;
+    /* rotate: -2deg; */
+}
+/* .first_block .intro .line_deco {
+    position: absolute;
+    width: 100rem;
+    height: 50rem;
+} */
+
+                                            /* ----- block n.2 ----- */
+
+#text {
+    margin-top: 100px;
+    font-family: 'Arial Rounded MT', sans-serif;
+    max-width: 720px;
+    /* margin: 0% auto; */
+    padding: 30px auto;
+    background: #F5EEFF;
+}
+#text h1 {
+    color: hsl(357, 50%, 22%);
+}
+#text h2 {
+    color: hsl(357, 50%, 22%);
+    margin: 60px 0px 8px 0px;
+}
+#text p {
+    line-height: 1.8;
+    margin-left: 7px;
+    margin-right: 80px;
+    margin-top: 5px;
+    color:hsl(355, 5%, 45%);
+    font-weight: 100;
+}
+#text hr {
+    border: 2px solid #F68B1E;
+    border-radius: 600px;
+    width: 45px;
+}
+
+/* footer */
+
+footer {
+    margin-top: 30px;
+    border-top: 0.2px solid rgba(206, 206, 206, 0.788);
+    background-color: #F5EEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial Rounded MT', sans-serif;;
+}
+.media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.media ion-icon {
+    font-size: 35px;
+    margin-right: 15px;
+    color: hsl(358, 34%, 28%);
+}
+.made a {
+    text-decoration: none;
+    color: #F68B1E;
+}
+footer .made {
+    color: rgba(113, 108, 108, 0.781);
+    margin-bottom: 0;
+    margin-top: 13px;
+}
+footer .reserve {
+    color: rgba(113, 108, 108, 0.781);
+    font-size: 12px;
+    margin: 20px 0px 40px 0px;
+}

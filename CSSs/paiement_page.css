@@ -1,0 +1,214 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #F5EEFF;
+    margin: 0;
+    padding: 0;
+}
+.bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: line;
+    background-color: #e6e6e6;
+    height: 100vh;
+}
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D3BEFF;
+    height: 100vh;
+    width: 55%;
+    margin: 0;
+    padding: 0 10%;
+    box-shadow: -4px 0px 18px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.description img {
+    margin-bottom: 20px;
+    width: 130%;
+}
+.description h3 {
+    font-size: 20px;
+    color: #8A8A8A;
+    line-height: 1.5;
+}
+.pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5EEFF;
+    height: 100vh;
+    width: 45%;
+    margin: 0;
+    padding: 0 10%;
+    box-shadow: 4px 0px 18px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.pay form {
+    border: 8px solid #D3BEFF;
+    border-radius: 18px;
+    padding: 20px 50px 50px 50px;
+}
+.pay .cardnbr {
+    width: 500px;
+    border: 3px solid rgba(246, 138, 30, 0.622);
+    border-radius: 16px;
+    padding: 12px;
+    color: #6E92F0;
+    background-color: transparent;
+}
+form h1 {
+    font-size: 32px;
+    color: #6E92F0;
+    font-weight: bold;
+    border-bottom: 4px solid #6E92F0;
+    padding: 6px 0px;
+    margin: 0px 15% 55px 15%;
+}
+form h2 {
+    font-size: 21px;
+    color: #6E92F0;
+    font-weight: bold;
+}
+form h4 {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-left: 5px;
+}
+.name_bloc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.name_bloc input{
+    width: 30%;
+    border: 3px solid rgba(246, 138, 30, 0.622);
+    border-radius: 16px;
+    padding: 12px;
+    color: #6E92F0;
+    background-color: transparent;
+    margin-left: 20px;
+}
+.name_bloc input:focus, .cardnbr input:focus, .email_bloc input:focus, .date input:focus, .cvv input:focus {
+    outline: none;
+    border: 3px solid rgba(246, 138, 30, 0.622);
+}
+.name_bloc {
+    margin-top: 20px;
+}
+.email_title  {
+    margin-top: 15px;
+}
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #B08BFF;
+    border: none;
+    border-radius: 16px;
+    padding: 12px;
+    color: #F5EEFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px auto 25px auto;
+}
+form button:hover {
+    background-color: #F5EEFF;
+    color: #B08BFF;
+    border: 4px solid #B08BFF;
+    padding: 8.25px;
+    cursor: pointer;
+}
+.a_payer {
+    border: 8px solid #D3BEFF;
+    border-radius: 18px;
+    padding: 20px 30px;
+    
+}
+.a_payer .prix_payer .text .price {
+    font-size: 30px;
+    color: rgba(77, 77, 77, 0.71);;
+    font-weight: bold;
+    margin: 0;
+}
+.prix_payer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.prix_payer ion-icon {
+    font-size: 40px;
+    color: rgba(77, 77, 77, 0.71);
+    margin-left: 20px;
+}
+.cta {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    z-index: 3;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #F68B1E;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta a {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   .cta a:hover {
+    text-decoration: none;
+   }
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #F68B1E;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }

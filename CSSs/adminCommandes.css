@@ -1,0 +1,229 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.card-body {
+    display : flex;
+    justify-content: flex-start;
+    align-items: top;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+.commande {
+    border : 8px solid #D3BEFF;
+    border-radius: 20px;
+    padding : 20px 10px 20px 20px;
+    margin-bottom : 10px;
+    width : calc(100% / 3 - 20px);
+    height: 100%;
+    margin-right : 10px;
+    position: relative;
+}
+.commande h2 {
+    font-size: 20px;
+    margin-bottom : 10px;
+    color: #4D4D4D;
+    font-weight: bold;  
+}
+.commande h4 {
+    font-size: 15px;
+    margin-bottom : 5px;
+    color: #6E92F0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.commande h4 p, .commande h4 ul li {
+    font-size: 15px;
+    margin-bottom : 5px;
+    color: #4D4D4D;
+    
+}
+
+/* Popup */
+.popup {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  top : 83%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popup-title {
+  font-size: 20px;
+  color: #6E92F0;
+  font-weight: 600;
+  margin: 0;
+}
+
+.popup-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-close i {
+  font-size: 20px;
+  color: #B4B4B4;
+}
+
+.popup-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup-section {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.popup-section-title {
+  font-size: 18px;
+  color: #6E92F0;
+  font-weight: 600;
+  margin: 0;
+}
+
+.popup-section-text {
+  font-size: 16px;
+  color: #B4B4B4;
+  font-weight: 600;
+  margin: 0;
+}
+
+.popup-section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popup-section-list li {
+  font-size: 16px;
+  color: #4D4D4D;
+  margin-bottom: 5px;
+}
+
+.popup:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: white;
+}
+
+.popup:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: #D3BEFF;
+}
+
+  .commande .afficher-plus {
+    margin-bottom: 10px;
+  }
+
+  .commande .popup {
+    display: none;
+  }
+
+  .commande .popup.visible {
+    display: block;
+  }
+/* Popup */
+
+
+.afficher-plus {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D3BEFF;
+    color : #6E92F0;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    top: 5px;
+    right: 5px;
+}
+
+.afficher-plus:hover {
+    cursor: pointer;
+}
+.commande .debut, .commande .fin {
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+
+.commande .debut p, .commande .fin p{
+    margin: 0 0 0 10px;
+    color: #B4B4B4;
+    font-size: 18px;
+}
+
+.input-container {
+    position: relative;
+    margin: 40px 0 20px 0;
+    width: 400px;
+    
+  }
+  
+  .input-container input[type="text"] {
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #6E92F0;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    color: #D3BEFF;
+  }
+  
+  .input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #6E92F0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input[type="text"]:focus ~ .label,
+  .input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #D3BEFF;
+  }
+  
+  .input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #D3BEFF;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input[type="text"]:focus ~ .underline,
+  .input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+  }
+  

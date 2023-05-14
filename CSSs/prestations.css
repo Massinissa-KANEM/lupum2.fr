@@ -1,0 +1,107 @@
+body {
+    background-color: #ECE3FF;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D3BEFF;
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    padding: 0 10%;
+    box-shadow: -4px 0px 18px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ECE3FF;
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+}
+.description img {
+    margin-bottom: 20px;
+}
+.description h3 {
+    font-size: 20px;
+    color: #8A8A8A;
+    line-height: 1.5;
+}
+.bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: line;
+    width: 100%;
+    /* cursor: url('../images/icons8-blue-pointer-48.png'), auto; */
+}
+
+.cta {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    z-index: 3;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #F68B1E;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta a {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   .cta a:hover {
+    text-decoration: none;
+   }
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #F68B1E;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
